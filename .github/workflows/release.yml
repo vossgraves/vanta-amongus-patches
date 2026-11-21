@@ -3,6 +3,10 @@ name: Release
 on:
   workflow_dispatch:
   push:
+    branches: [dev]
+
+# Pushes to main are released from the bench; keep this workflow off every commit so a
+# build without MORPHE_SIGNING_KEY does not paint the repo red.
 
 jobs:
   release:
