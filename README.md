@@ -14,6 +14,18 @@ APKs with a hardcoded menu for one version; this bundle takes the clean APK from
 APKPure and produces the same result through Morphe Manager, with the menu rebuilt from
 source on every release.
 
+## Install in Morphe
+
+Add this repository to Morphe Manager (**Settings → Patch bundle source → Add**) or paste it
+into the bundle URL field:
+
+```
+https://raw.githubusercontent.com/vossgraves/vanta-amongus-patches/main/patches-bundle.json
+```
+
+Manager reads the index, fetches the signed `.mpp` from the latest release, and verifies it
+against the committed public key.
+
 ## Targets
 
 | Field | Value |
